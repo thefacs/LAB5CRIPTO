@@ -21,9 +21,7 @@ lab5/
 │   └── Dockerfile
 │── C3/
 │   └── Dockerfile
-│── C4/
-│   └── Dockerfile
-│── S1/
+│── C4_S1/
 │   └── Dockerfile
 └── README.md
 ```
