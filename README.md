@@ -1,11 +1,17 @@
-# 🐳 Lab 5 — SSH, OpenSSH y Captura de Tráfico en Docker
+#  Lab 5 — SSH, OpenSSH y Captura de Tráfico en Docker
+
+**Autor:** Felipe Cuevas  
+**Fecha:** Octubre 2025  
+**Correo:** felipe.cuevas1@mail.udp.cl  
+
+---
 
 Este laboratorio utiliza múltiples contenedores Docker para analizar el comportamiento del protocolo SSH durante su fase inicial (Protocol String, KEI, HASSH).  
 Se levantaron clientes con distintas versiones de Ubuntu/OpenSSH y un servidor S1 para comparar el tráfico generado y replicar la captura del informante.
 
 ---
 
-## 📂 Estructura del proyecto
+##  Estructura del proyecto
 
 ```
 lab5/
@@ -24,7 +30,7 @@ lab5/
 
 ---
 
-## 🚀 Levantamiento del servidor S1
+##  Levantamiento del servidor S1
 
 ```bash
 docker build -t s1:latest S1/
@@ -42,7 +48,7 @@ exit
 
 ---
 
-## 🖥️ Levantamiento de los clientes (C1–C4)
+## Levantamiento de los clientes (C1–C4)
 
 ### C1 (Ubuntu 16.10 — OpenSSH 7.3p1)
 ```bash
@@ -70,7 +76,7 @@ docker run -d --name C4 c4:latest sleep infinity
 
 ---
 
-## 🔎 Generación del tráfico SSH
+## Generación del tráfico SSH
 
 Acceso a un cliente:
 
@@ -92,7 +98,7 @@ tcp.port == 2222
 
 ---
 
-## 📌 Resultado
+##  Resultado
 
 - Se identificó que el cliente que replica el tráfico del informante es **C3 (OpenSSH 8.3p1)**.
 - Se analizó el KEI, HASSH y el comportamiento del protocolo SSH.
