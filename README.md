@@ -1,7 +1,7 @@
 #  Lab 5 — SSH, OpenSSH y Captura de Tráfico en Docker
 
 **Autor:** Felipe Cuevas  
-**Fecha:** Octubre 2025  
+**Fecha:** Noviembre 2025  
 **Correo:** felipe.cuevas1@mail.udp.cl  
 
 ---
