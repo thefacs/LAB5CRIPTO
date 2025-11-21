@@ -68,7 +68,7 @@ docker run -d --name C3 c3:latest sleep infinity
 
 ### C4 (Ubuntu 22.10 — OpenSSH 9.0p1)
 ```bash
-docker build -t c4:latest C4/
+docker build -t c4:latest C4_S1/
 docker run -d --name C4 c4:latest sleep infinity
 ```
 
