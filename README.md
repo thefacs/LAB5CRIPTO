@@ -31,7 +31,7 @@ lab5/
 ##  Levantamiento del servidor S1
 
 ```bash
-docker build -t s1:latest S1/
+docker build -t s1:latest C4_S1/
 docker run -d --name S1 -p 2222:22 s1:latest
 ```
 
